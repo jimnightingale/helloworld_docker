@@ -17,6 +17,7 @@ var server = http.createServer(function (req, res) {
     res.write("from bet365@" + hostname + "\n");
     res.write("at " + date + "\n");
     res.end();
+    
     // do some logging
     var clientIp = null;
     var forwardedIps = req.headers['x-forwarded-for'];
