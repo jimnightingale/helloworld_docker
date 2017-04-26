@@ -24,9 +24,9 @@ var server = http.createServer(function (req, res) {
       var name = "World"
       if (req.url != "/") {
         name = req.url.split("/")[1];
-      } else {
-        hitCountHW ++;
-      }
+      //} else {
+      //  hitCountHW ++;
+      //}
       
       // respond to the request
       res.writeHead(200, {"Content-Type": "text/plain"});
