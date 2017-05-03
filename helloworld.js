@@ -31,7 +31,7 @@ var server = http.createServer(function (req, res) {
       // respond to the request
       res.writeHead(200, {"Content-Type": "text/plain"});
       res.write("Hello " + name + "\n");
-      res.write("from bet365@" + hostname + "\n");
+      res.write("from demo@" + hostname + "\n");
       res.write("at " + date + "\n");
       res.end();
 
