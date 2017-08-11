@@ -13,8 +13,7 @@ var server = http.createServer(function (req, res) {
       res.write("# HELP hit_count_total The total amount of hits to this service exluding /favicon and /metrics." + "\n");
       res.write("# TYPE hit_count_total counter" + "\n");
       res.write("hit_count_total " + hitCountTotal + "\n");
-      //res.write("# HELP hit_count_hw The amount of unparametised hits (ie returns 'Hello World' to this service exluding /favicon and 
-/metrics ." + "\n")
+      //res.write("# HELP hit_count_hw The amount of unparametised hits (ie returns 'Hello World' to this service exluding /favicon and :w/metrics ." + "\n")
       //res.write("hit_count_hw: " + hitCountHW + "\n");
       res.end();
     } else {
