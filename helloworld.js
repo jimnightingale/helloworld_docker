@@ -52,3 +52,20 @@ var server = http.createServer(function (req, res) {
 });
 server.listen(listeningPort );
 console.log("Server running at http://localhost:" + listeningPort + "/");
+
+
+// client request...
+/*
+var http = require('http');
+  
+var uriHost = process.argv[2];
+console.log(uriHost);
+var options = {
+  host: uriHost
+//  path: '/uri/?opt=1'
+};
+callback = function(response) {
+  console.log(response.statusCode);
+}
+http.request(options, callback).end();
+*/
